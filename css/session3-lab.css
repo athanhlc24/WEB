@@ -1,0 +1,13 @@
+div{
+
+}
+#tren{
+    float: bottom;
+    width: 33.33%;
+    border: 1px solid red;
+}
+#duoi{
+    float: left;
+    width: calc(100% - 33.33%);
+    border: 1px solid yellow;
+}

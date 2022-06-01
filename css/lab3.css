@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #eaf6ce;
+    display: flex;
+    justify-content: center;
+}
+#boxall{
+    width: 1050px;
+    height: 1150px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    margin: 60px 220px;
+    border: 0px solid #e1f3e2;
+    display: flex;
+    flex-direction: column;
+}
+.boxTen{
+    width: 1050px;
+    height: 200px;
+    background-color: #c0f3f6;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    display: flex;
+
+}
+
+
+
+.name{
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto;
+
+}
+h1{
+    text-transform: uppercase;
+}
+#job{
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.boxb{
+    width: 1050px;
+    height: 950px;
+    background-color: bisque;
+    border-radius: 5px;
+    display: flex;
+}
+.boxc{
+    width:300px ;
+    height: 1100px;
+    background-color: aliceblue ;
+    margin: -150px 0 0 40px;
+    border: 1px solid olivedrab;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.boxc1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    background-image: url("../images/de8x09k-3430617d-7f88-43b4-a22d-0db4540ecaa7.png") ;
+    background-size: cover;
+    border-radius: 100%;
+    margin: auto;
+}
+.boxc2{
+    width: 200px;
+    height: 950px;
+    line-height: 2.5;
+    margin: auto;
+
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a:hover{
+    color: yellowgreen;
+}
+.boxd{
+    width: 700px ;
+    height: 950px ;
+    background-color: #fafafa;
+    border: 1px solid #d9efac;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.box2{
+    width: 700px;
+    height: 310px;
+
+}
+.item1{
+    background-color: #f5f5e7;
+    margin: 4px 2px 4px 0;
+    border: 2px solid #eaf6ce;
+}
+.item2{
+    background-color: #f3dbca;
+    margin: 0 2px 4px 0px;
+    border: 2px solid #d9efac;
+    display: flex;
+}
+.box22{
+
+}
+h3{
+    font-weight: 400;
+}
+.lui{
+    margin: 0 0 0 50px;
+}
+
+.item3{
+    background-color: #fde8eb;
+    margin: 0 2px 4px 0;
+    border: 2px solid #d9efac;
+}

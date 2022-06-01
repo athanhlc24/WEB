@@ -1,0 +1,17 @@
+h4 p{
+    text-align: right;
+}
+h3{
+    color: #d02cd5;
+    text-decoration:underline ;
+    font-style: italic;
+}
+h3 b{
+    font-weight: 900;
+
+}
+p{
+    font-family: "Roboto";
+}
+
+

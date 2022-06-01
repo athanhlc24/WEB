@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+<button type="button" onclick="clickMe()" onmouseenter="hoverMe()" onmouseleave="outMe()">Click me</button>
+<input onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()" onchange="changeV(this)" type="text" placeholder="Enter..."/>
+<select name="city" onchange="changeV(this)">
+    <option value="hn">HN</option>
+    <option value="sg">SG</option>
+</select>
+<!--<script type="text/javascript" src="js/vietlot.js"></script>-->
+<script type="text/javascript" src="js/listener.js"></script>
+</body>
+</html>

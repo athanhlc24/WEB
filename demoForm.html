@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css">
+
+
+    <link rel="stylesheet" href="css/demoPagelayout.css"/>
+    <link rel="stylesheet" href="css/daital.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+<header class="section header">
+    <div class="container">
+        <div class="logo">
+            <a class="logo-link" href="#">Generis Fremawork</a>
+            <p> Support HTML5 & responsive design</p>
+        </div>
+        <div class="toplinks">
+            <ul>
+                <li><a href="#">Sample</a></li>
+                <li><a href="#">Layouts</a></li>
+                <li><a href="#">Templates</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<nav class="section nav">
+    <div class="container">
+        <ul class="menu">
+            <li><a href="#">Category1</a></li>
+            <li><a href="#">Category2</a></li>
+            <li><a href="#">Category3</a></li>
+            <li><a href="#">Category4</a></li>
+            <li class="last"><a href="#">Get Genesis Now</a></li>
+        </ul>
+    </div>
+</nav>
+<section class="section main columns-right">
+    <div class="container">
+        <article class="content">
+            Content
+            <form method="get" action="#">
+                <div class="form-group">
+                    <label>Fullname</label>
+                    <input type="text" name="fullname" placeholder="Hãy nhập tên của bạn" required/>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Hãy nhập email của bạn" required/>
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" name="age" min="10" max="99" value="11" placeholder="Hãy nhập tuổi của bạn"/>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="pwd"  placeholder="Password" required/>
+                </div>
+                <div class="form-group">
+                    <label>Date of birth</label>
+                    <input type="date" name="birthday"  placeholder="Date of birth"/>
+                </div>
+                <div class="form-group">
+                    <label>Time</label>
+                    <input type="time" name="timeup"  placeholder="Time up"/>
+                </div>
+                <div class="form-group">
+                    <label>Telephone</label>
+                    <input type="tel" name="telephone"  placeholder="Telephone..."/>
+                </div>
+                <div class="form-group">
+                    <label>My pho to</label>
+                    <input type="file" name="myphoto"  placeholder="file ảnh đuôi jpg..."/>
+                </div>
+                <div class="form-group">
+                    <label>My color</label>
+                    <input type="color" name="mycolor"  placeholder="My color..."/>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <label><input type="radio" name="gender"  value="male"/>male</label>
+                    <label><input type="radio" name="gender"  value="female"/>female</label>
+                    <label><input type="radio" name="gender"  value="other"/>other</label>
+                </div>
+                <div class="form-group">
+                    <label>Options</label>
+                    <label><input type="checkbox" name="options[]"  value="option1"/>opt1</label>
+                    <label><input type="checkbox" name="options[]"  value="option2"/>opt2</label>
+                    <label><input type="checkbox" name="options[]"  value="option3"/>opt3</label>
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <select name="city">
+                        <option value="">Select a city...</option>
+                        <optgroup label="VN">
+                        <option value="hn">Hà Nội</option>
+                        <option value="sg">Sài Gòn</option>
+                        <option value="dn">Đà Nẵng</option>
+                        <option value="hp">Hải Phòng</option>
+                        </optgroup>
+
+                        <optgroup label="US">
+                        <option value="nyc">New York</option>
+                        <option value="la">LA</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Introduction</label>
+                    <textarea name="introduction" cols="50" rows="10" placeholder="Introduction">abc xyz</textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" >Button</button>
+                </div
+            </form>
+        </article>
+        <aside class="sidebar">
+            Sidebar
+            <div class="box-animation">
+                demo box-animation
+            </div>
+        </aside>
+    </div>
+</section>
+<footer class="section footer">
+    <div class="container">
+        Footer
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook-messenger"></i>
+        <i class="fa-solid fa-laptop"></i>
+    </div>
+</footer>
+</body>
+</html>

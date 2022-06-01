@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="js/formSuKienObject.js"></script>
+
+        <div>
+            <label>Tên</label>
+            <input type="text" name="fullname" onkeyup="inputName(this)" placeholder="Hãy nhập tên " />
+        </div>
+        <div>
+            <label>Tuổi</label>
+            <input type="number" name="age" onchange="inputTuoi(this)" placeholder="tuổi" />
+        </div>
+        <div>
+            <label>Địa chỉ</label>
+            <input type="text" name="address" onkeyup="inputDiachi(this)" placeholder="địa chỉ" />
+        </div>
+        <div>
+            <label>Giới tính</label>
+            <label><input type="radio" name="gender" onchange="inputGender(this)" value="male"/>male</label>
+            <label><input type="radio" name="gender" onchange="inputGender(this)" value="female"/>female</label>
+            <label><input type="radio" name="gender"  onchange="inputGender(this)" value="other"/>other</label>
+        </div>
+        <div>
+            <button type="button" onclick="submit()">Submit</button>
+        </div>
+
+</body>
+</html>

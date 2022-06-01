@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+
+    <h1 id="heading1">Trần Văn Thành cho biết Đa số các trường hợp nhập viện</h1>
+    <p id="paragraph1">Đa số các trường hợp nhập viện trong tình trạng thiếu máu nặng do tan máu, kèm theo suy đa tạng. Hiện tại, Bệnh viện đa khoa tỉnh Hòa Bình đang điều trị 2 bệnh nhân ngộ độc do sử dụng lá du mại chế biến thức ăn và đun nước uống.</p>
+    <button type="button" onclick="clickme()">click me</button>
+    <ul id="list"></ul>
+    <button type="button" onclick="showList()">Show List</button>
+    <input type="number" id="inputMin" min="1" placeholder="input number..."/>
+    <h1>
+        <span id="min">10</span>:<span id="sec">00</span>
+    </h1>
+    <button type="button" onclick="timer()">Star timer</button>
+    <script type="text/javascript">
+        var x = 0;
+        function clickme() {
+             x = x+45;
+            var h1obj = document.getElementById("heading1");
+                //h1obj.style.color="red";
+                //h1obj.style.transform = "rotate("+x+"deg)";
+                h1obj.style.backgroundColor= "yellow";
+                // text
+                h1obj.innerText = "xin chào các cụ";
+                // html
+                h1obj.innerHTML = "<i>Hello word</i>";
+        }
+        // setTimeout(function (){
+        //     // chuyển đổi h1 thành màu đỏ
+        //     h1obj.style.color = "red";
+        // },10000)
+        function showList(){
+            var student = [
+                {
+                    name:"Nguyễn Văn An",
+                    age:19,
+                },
+                {
+                    name:"Nguyễn Tất Thành",
+                    age: 22,
+                },
+            ];
+            var ulObj = document.getElementById("list");
+            var xyzHTML = "";
+            for(var i = 0;i<student.length;i++){
+                var xyz = "<li>Name:" + student[i].name+"</li>";
+                xyzHTML += xyz;
+            }
+            ulObj.innerHTML = xyzHTML;
+        }
+        var time  = {
+            min:10,
+            sec:0,
+        }
+        function timer(){
+            var im = document.getElementById("inputMin");
+            time.min = im.value;
+            time.sec = 0;
+         var tm =setInterval(function () {
+             //code here
+             //1. in ra thời gian
+             var minSpan = document.getElementById("min");
+             var secSpan = document.getElementById("sec");
+                // minSpan.innerText = time.min;
+                // secSpan.innerText = time.sec;
+             minSpan.innerText = time.min>=10?time.min:"0"+time.min;
+             secSpan.innerText = time.sec>=10?time.sec:"0"+time.sec;
+
+             //2. giảm second
+             time.sec--;
+
+             //3. khi second về 0 giảm min
+             if(time.sec<0){
+                 time.sec = 59;
+                 time.min--;
+             }
+
+             //4.khi min về 0 dừng
+             if(time.min<0){
+                 clearInterval(tm);
+             }
+
+         },1000)
+        }
+    </script>
+</body>
+</html>

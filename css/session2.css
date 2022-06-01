@@ -1,0 +1,45 @@
+h1{
+    color: red;
+}
+p{
+    /*hoc thuoc*/
+    color: #06750c;
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: justify;/* left right center*/
+    text-transform: capitalize;/*uptocase, lowercase*/
+    text-decoration: none;/* underline , line - through, overline none*/
+    text-indent: 50px;/*lui dau dong dong dau tien cua doan van*/
+    font-weight: normal;/*100 300 400 600 700 800 900*/
+    font-family: "Times New Roman";
+
+    width: 600px;/*Do rong cua khoi*/
+    background: #66a427;/*mau nen*/
+    /* mo rong*/
+    text-shadow: 0 0 5px;/*bong bay data*/
+
+
+}
+body
+{
+    background-color: #2b8d6c;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;/*chay theo man hinh*/
+
+}
+b{
+    color: red;
+}
+p b{
+    color: beige;
+}
+p i > u{
+    color: cornflowerblue;
+}
+a {
+    color: deeppink;
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+}

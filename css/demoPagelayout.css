@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{/* mau nen kich co....font chu*/
+    background-color: #fafafa;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: left;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a:hover{
+    color: cornflowerblue;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.columns-right .content{
+    float: left;
+    width: 66.67%;
+}
+.columns-right .sidebar{
+    float: right;
+    width: 33.33%;
+}

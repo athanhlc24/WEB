@@ -1,0 +1,65 @@
+.header{
+    background-color: #ffffff;
+    border-bottom: 1px solid #dedcdc;
+    padding: 20px 0;
+}
+.logo{
+    float: left;
+    width: 40%;
+}
+.toplinks{
+    float: right;
+    width: 50%;
+}
+.toplinks ul{
+    float: right;
+}
+.toplinks ul li{
+    float: left;
+    list-style: none;
+    margin-left: 25px;
+}
+.logo .logo-link{
+    font-size: 28px;
+    font-weight: 700;
+}
+.logo p{
+    font-size: 15px;
+}
+.toplinks a{
+    font-weight: 500;
+    line-height: 52px;
+    font-size: 15px;
+}
+.nav{
+    background-color: oldlace;
+    padding: 20px 0;
+}
+.menu li{
+    list-style: none;
+    float: left;
+    margin-right: 25px;
+}
+.menu li.last{
+    float: right;
+    margin-right: 0;
+}
+.menu li a{
+    font-weight: 500;
+    font-size: 15px;
+}
+.main{
+    margin-top: 30px;
+}
+.columns-right .content{
+    background-color: #d9efac;
+    padding: 30px;
+    width: calc(66.67% - 75px);
+    margin-right: 15px ;
+}
+.columns-right .sidebar{
+    background-color: #c0f3f6;
+    padding: 20px;
+    width: calc(33.33% - 55px);
+    margin-left: 15px;
+}

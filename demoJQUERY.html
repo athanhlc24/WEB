@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JQUERY</title>
+</head>
+<body>
+<h1 id="heading1">Compressed and uncompressed copies of jQuery files are available</h1>
+<p class="paragraph">Compressed and uncompressed copies of jQuery files are available</p>
+<p class="paragraph">Compressed and uncompressed copies of jQuery files are available</p>
+
+<button type="button" onclick="onBox()" >ON</button>
+<button type="button" onclick="offBox()">OFF</button>
+
+<ul class="box">
+    <li>Lẩu tứ xuyên</li>
+    <li>Vịt quay Bắc Kinh</li>
+</ul>
+
+<script type="text/javascript" src="libs/jquery3.6/jquery3.6.0.js"></script>
+<script type="text/javascript">
+
+    var box = $(".box");
+    function onBox(){
+        //box.show();
+        //box.fadeIn(5000);
+        box.slideDown();
+    }
+    function offBox(){
+        box.hide();
+        //box.fadeOut(500);
+        //box.slideUp();
+    }
+
+
+
+
+    var hObj = $("#heading1");// đây là 1 đối tượng của JQUERY
+    hObj.css("color","red");
+    hObj.css({
+        "background-color": "yellowgreen",
+        "margin-top":"5px"
+    });
+    hObj.text("hello world!");
+    hObj.html("<i>hello world!</i>");
+    hObj.append("<i>T2203E</i>"); // hobj.innerHTML+=...;
+    hObj.prepend("<i>Xin chào</i>");// hobj.innerHTML = ... + hobj.innerHTML
+    var para = $(".paragraph");
+    para.css("color","pink");
+
+
+
+
+
+    //call API
+    $.ajax({
+        url:"https://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+        method:"GET",
+        success: function (result){
+            console.log(result);// k cần phải JSON.parse
+        },
+        error: function (err) {
+            // khi call api lỗi sẽ đi vào đây
+
+        }
+    })
+
+</script>
+</body>
+</html>

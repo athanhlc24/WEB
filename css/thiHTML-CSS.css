@@ -1,0 +1,39 @@
+body{
+    background-color: #00AB6F;
+    font-size: 14px;
+    font-family: "Macondo";
+    font-weight: 400;
+    text-align: left;
+    color: #333333;
+}
+
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.form-style{
+
+    margin: 200px ;
+    padding: 20px ;
+    border: 0px solid ;
+    width: calc(100% - 442px);
+
+}
+.style-facebook{
+    background-color: #5c5cef;
+    color: #eaf6ce;
+}
+.style-google{
+    background-color: red;
+    color: #eaf6ce;
+}
+.color-form{
+    background-color: #eaf6ce;
+}
